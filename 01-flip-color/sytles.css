@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+    --ff-primary: "Roboto", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--ff-primary);
+}
