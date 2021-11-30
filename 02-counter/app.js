@@ -22,10 +22,10 @@ let count = 0;
 btns.forEach((btn) => {
     btn.addEventListener("click", (k) => {
         // using a JS event property called currentTarget
-        const styles = k.currentTarget.classList;
-        if(styles.contains("decrease")) {
+        const choseThisBtn = k.currentTarget.classList;
+        if(choseThisBtn.contains("decrease")) {
             count --;
-        } else if (styles.contains("increase")) {
+        } else if (choseThisBtn.contains("increase")) {
             count ++;
         } else {
             count = 0;
