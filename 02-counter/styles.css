@@ -6,22 +6,38 @@
 
 * {
     font-family: var(--ff-primary);
+    text-transform: capitalize;
     /* text-align: center; */
 }
 
-.center {
-    width: 100px;
-    height: 100px;
+h2 {
+    font-size: 2rem;
+}
 
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    margin: auto;
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.center {
+    text-align: center;
+}
+
+#num {
+    font-size: 6rem;
+    font-weight: bold;
 }
 
 .btns {
     display:flex;
+}
+
+.btn {
+    padding: 0.375rem 0.75rem;
+    /* margin: 0.375rem 0.75rem; */
+    margin: 0.5rem;
+    display: inline-block;
+    font-size: 0.875rem;
+    cursor: pointer;
 }
