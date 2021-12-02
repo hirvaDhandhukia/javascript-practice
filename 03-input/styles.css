@@ -45,7 +45,8 @@ input {
 }
 
 span {
-    background-color: blue;
+    /* background-color: blue; */
+    color: red;
     font-size: 2rem;
     line-height: 1;
 
