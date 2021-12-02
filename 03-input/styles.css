@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+    --ff-primary: "Roboto", sans-serif;
+}
+
+* {
+    font-family: var(--ff-primary);
+    text-transform: capitalize;
+}
+
+body {
+    background-color: #EAECEE;
+}
+
+/* .container {
+    width: 500px;
+    height: 500px;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+    background-color: red;
+} */
+
+
+.container {
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+    /* background-color: red; */
+}
+
+input {
+    border: #808B96 solid 1.5px;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 350px;
+    line-height: 1;
+    font-size: 1.25rem;
+}
+
+span {
+    background-color: blue;
+    font-size: 2rem;
+    line-height: 1;
+
+}
