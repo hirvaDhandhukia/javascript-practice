@@ -29,9 +29,10 @@ body {
 
 
 .container {
-    min-height: 80vh;
-    /* margin-top: 50%; */
+    /* min-height: 80vh; */
+    /* margin-top: 10%; */
     /* min-height: 20vh; */
+    margin-top: 250px;
     display: grid;
     place-items: center;
     /* background-color: red; */
@@ -49,6 +50,7 @@ input {
 span {
     /* background-color: blue; */
     /* color: red; */
+    margin-top: 0.75rem;
     font-size: 2rem;
     line-height: 1;
 
