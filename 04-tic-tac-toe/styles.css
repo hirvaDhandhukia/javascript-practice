@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+    --ff-primary: "Roboto", sans-serif;
+}
+
+* {
+    font-family: var(--ff-primary);
+    text-transform: capitalize;
+}
+
+
+.container {
+    /* min-height: 80vh; */
+    /* margin-top: 10%; */
+    /* min-height: 20vh; */
+    /* margin-top: 250px; */
+    display: grid;
+    place-items: center;
+    /* background-color: red; */
+}
