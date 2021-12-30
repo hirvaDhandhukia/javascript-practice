@@ -46,3 +46,7 @@ Array.from(boxes).forEach(element => {
     })
 })
 
+let reset = document.getElementById("reset");
+reset.addEventListener('click', ()=> {
+    console.log("reset the game");
+})

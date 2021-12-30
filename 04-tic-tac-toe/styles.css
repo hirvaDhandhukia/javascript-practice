@@ -66,3 +66,17 @@
 .bb {
     border-bottom: 0;
 }
+
+#reset {
+    margin: 0 23px;
+    padding: 6px 14px;
+    cursor: pointer;
+    /* background-color: rgb(180, 178, 178);
+    border-radius: 6px; */
+    font-size: 15px;
+    /* font-weight: 700; */
+}
+
+.info {
+    font-size: 25px;
+}
