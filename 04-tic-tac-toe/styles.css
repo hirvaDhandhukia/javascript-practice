@@ -16,11 +16,11 @@
     /* margin-top: 250px; */
     display: grid;
     place-items: center;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .container {
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     display: flex;
     justify-content: center;
     /* margin-top: 50px; */
@@ -33,4 +33,36 @@
     grid-template-rows: repeat(3, 10vw);
     grid-template-columns: repeat(3, 10vw);
     /* background-color: indigo; */
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    /* hamko box ke andar ki text ko center pr laana hai (i.e. boxText ko. so let's make it display-flex and then have justify-content-center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover {
+    background-color: rgb(180, 178, 178);
+}
+
+.gameInfo {
+    padding: 0 35px;
+    /* background-color: palevioletred; */
+}
+
+
+.br {
+    border-right: 0;
+}
+.bl {
+    border-left: 0;
+}
+.bt {
+    border-top: 0;
+}
+.bb {
+    border-bottom: 0;
 }
