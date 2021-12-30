@@ -1,6 +1,6 @@
 ## Tic Tac Toe
 
-### `Live Project: ` 
+### `Live Project: ` https://tic-tac-toe-hirva.netlify.app/
 
 ## Things i learned here:
 1. 
