@@ -17,7 +17,7 @@ Array.from(boxes).forEach(element => {
     element.addEventListener('click', ()=>{
         if(boxText.innerText === '') {
             boxText.innerText = turn;
-            changeTurn();
+            turn = changeTurn();
             checkWin();
 
             document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
