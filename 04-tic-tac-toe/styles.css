@@ -9,13 +9,28 @@
     text-transform: capitalize;
 }
 
-
-.container {
+.nav {
     /* min-height: 80vh; */
     /* margin-top: 10%; */
     /* min-height: 20vh; */
     /* margin-top: 250px; */
     display: grid;
     place-items: center;
-    /* background-color: red; */
+    background-color: red;
+}
+
+.container {
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 50px; */
+    padding-top: 50px;
+}
+
+.gameContainer {
+    /* the container is a grid with 9 items in it */
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    /* background-color: indigo; */
 }
