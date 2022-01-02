@@ -46,7 +46,12 @@ Array.from(boxes).forEach(element => {
     })
 })
 
+// add onclick event listner to reset button
 let reset = document.getElementById("reset");
 reset.addEventListener('click', ()=> {
-    console.log("reset the game");
+    // console.log("reset the game");
+    let boxText = element.querySelector(".boxText");
+    Array.from(boxText).forEach(element => {{
+        element.innerText = "";
+    }})
 })
