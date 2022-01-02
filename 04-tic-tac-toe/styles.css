@@ -7,6 +7,7 @@
 * {
     font-family: var(--ff-primary);
     text-transform: capitalize;
+    font-size: 1.5rem;
 }
 
 .nav {
@@ -30,8 +31,11 @@
 .gameContainer {
     /* the container is a grid with 9 items in it */
     display: grid;
-    grid-template-rows: repeat(3, 10vw);
-    grid-template-columns: repeat(3, 10vw);
+    /* grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw); */
+
+    grid-template-rows: repeat(3, 3.5rem);
+    grid-template-columns: repeat(3, 3.5rem);
     /* background-color: indigo; */
 }
 
@@ -46,6 +50,10 @@
 }
 .box:hover {
     background-color: rgb(180, 178, 178);
+}
+
+.box span {
+    font-size: 3.5rem;
 }
 
 .gameInfo {
@@ -80,3 +88,11 @@
 .info {
     font-size: 25px;
 }
+
+/* media-query && flex-wrap for making the screen responsive */
+@media screen and (max-width: 800px) {
+    .container{
+        flex-wrap: wrap;
+    }
+}
+
