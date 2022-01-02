@@ -58,7 +58,7 @@
 
 .gameInfo {
     padding: 0 35px;
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
 }
 .gameInfo h4 {
     margin-bottom: 0;
