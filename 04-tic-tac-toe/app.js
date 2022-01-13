@@ -2,10 +2,16 @@
 let turn = "X";
 let gameover = false;
 
+// changing turns
+// if current turn is 'X' then change turn to 'O' else change turn to 'X'
 const changeTurn = () => {
-    return turn === "X"?"O" : "X";
+    return turn === "X" ? "O":"X";
 }
 
+// build an array that defines all conditions of win.
+// we are iterating with forEach loop with a passed value 'e' 
+// 'e' here is the position on each array i.e. 0,1 or2 (wins.forEach(e => {}))
+// e[0] or e[1] etc here represents the value of 'X' or 'O'
 const checkWin = () => {
     let boxText = document.getElementsByClassName('boxText');
     let wins = [
@@ -32,6 +38,8 @@ const checkWin = () => {
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element => {
     // jo box click ho wo box ke andar ka text muje change krna hai
+    // and wo box ka innerText change krne ke baad i have to change the turn 
+    // also i need to check if the 'win' condition is true or not
     let boxText = element.querySelector(".boxText");
     element.addEventListener('click', ()=>{
         if(boxText.innerText === '') {
@@ -50,6 +58,7 @@ Array.from(boxes).forEach(element => {
 let reset = document.getElementById("reset");
 reset.addEventListener('click', ()=> {
     // console.log("reset the game");
+    // change all element.innerText to empty
     let boxText = document.querySelectorAll(".boxText");
     Array.from(boxText).forEach(element => {{
         element.innerText = "";

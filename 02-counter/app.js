@@ -22,6 +22,7 @@ let count = 0;
 btns.forEach((btn) => {
     btn.addEventListener("click", (k) => {
         // using a JS event property called currentTarget
+        // i.e we stored all values of class names of the clicked btn 'k' in a variable choseThisBtn
         const choseThisBtn = k.currentTarget.classList;
         if(choseThisBtn.contains("decrease")) {
             count --;
@@ -44,3 +45,8 @@ btns.forEach((btn) => {
         // value.innerHTML = count;
     });
 });
+
+// here on line 44 =>
+// 'textContents' is all text contained by an element and all its children that are for formatting 
+// purposes only. 'innerText' returns all text contained by an element and all its child elements. 
+// 'innerHtml' returns all text, including html tags, that is contained by an element.
