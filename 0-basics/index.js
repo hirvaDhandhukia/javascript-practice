@@ -74,18 +74,50 @@
 // // ....
 // z(); // will return closure of y
 
-// closure to next level
-function z() {
-    var b = 22;
-    function x() {
-        var a =7;
-        function y() {
-            // var b=9;
-            console.log(a,b);
-        }
-        y();
-    }
-    x();
+// // closure to next level
+// function z() {
+//     var b = 22;
+//     function x() {
+//         var a =7;
+//         function y() {
+//             // var b=9;
+//             console.log(a,b);
+//         }
+//         y();
+//     }
+//     x();
+// }
+
+// z();
+
+// call, apply and bind
+let name = {
+    firstname: "Hirva",
+    lastname: "Dhandhukia",
 }
 
-z();
+let printFullName = function (Hometown, State) {
+    console.log(this.firstname + " " + this.lastname + " from " + Hometown + ", " + State);
+}
+
+// printFullName.call(name, "Ahmedabad");
+
+let name2 = {
+    firstname: "Harsh",
+    lastname: "Prajapati",   
+}
+// funciton borrowing
+// printFullName.call(name2);
+
+
+// apply method
+printFullName.call(name, "Ahmedabad", "Gujarat");
+printFullName.apply(name2, ["Mumbai", "Maharashtra"]);
+
+// bind
+// this will create a copy of 'printFullName' and it will bind that to name2 object and will return a function
+let printMyName = printFullName.bind(name2, "Mumbai", "Maharashtra");
+console.log(printMyName);
+printMyName();
+
+
