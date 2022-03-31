@@ -127,15 +127,34 @@
 //     console.log(x*y);
 // }
 
-let multiply = function (x) {
-    return function (y) {
-        console.log(x*y);
+// let multiply = function (x) {
+//     return function (y) {
+//         console.log(x*y);
+//     }
+// } 
+
+// let multiplyByTwo = multiply(2);
+// console.log(multiplyByTwo);
+// multiplyByTwo(5);
+
+// // let multiplyByThree = multiply.bind(this, 3);
+// // multiplyByThree(5);
+
+
+
+// setTimeout using closures 
+// this will print the value of i after 1 second
+function x() {
+    var i = 1;
+    for (var i=1; i<=5; i++) {
+        // making a closure
+        function close(x) {
+            setTimeout(function () {
+                console.log(x);
+            }, x*1000);
+        }
+        close(i);
     }
-} 
-
-let multiplyByTwo = multiply(2);
-console.log(multiplyByTwo);
-multiplyByTwo(5);
-
-// let multiplyByThree = multiply.bind(this, 3);
-// multiplyByThree(5);
+    console.log("Hirva says Hello to world")
+}
+x();
