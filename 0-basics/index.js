@@ -144,17 +144,50 @@
 
 // setTimeout using closures 
 // this will print the value of i after 1 second
-function x() {
-    var i = 1;
-    for (var i=1; i<=5; i++) {
-        // making a closure
-        function close(x) {
-            setTimeout(function () {
-                console.log(x);
-            }, x*1000);
+// function x() {
+//     var i = 1;
+//     for (var i=1; i<=5; i++) {
+//         // making a closure
+//         function close(x) {
+//             setTimeout(function () {
+//                 console.log(x);
+//             }, x*1000);
+//         }
+//         close(i);
+//     }
+//     console.log("Hirva says Hello to world")
+// }
+// x();
+
+
+// practice
+function outest() {
+    var c=20;
+    function outer(b) {
+        function inner() {
+            console.log(a, b, c);
         }
-        close(i);
+        let a = 10;
+        return inner;
     }
-    console.log("Hirva says Hello to world")
+    return outer;
 }
-x();
+
+// outer()();
+var close = outest()("hirva");
+close();
+
+// data privacy using closures
+function counter() {
+    var count = 0;
+    return function incrementCounter() {
+        count++;
+        console.log(count);
+    }
+}
+var counter1 = counter();
+counter1()
+counter1()
+
+var counter2 = counter();
+counter2();
