@@ -241,10 +241,24 @@
 // first class functions 
 // we can pass functions inside another functions as an arguments
 // functions are treated as values in JS
-const d = function(param1) {
-    return function xyz() {}
+// const d = function(param1) {
+//     return function xyz() {}
+// }
+// // d(function() {
+// //     console.log("Hello from Hirva");
+// // })
+// console.log(d());
+
+
+// Callback Function in JS
+// this 'y()' here is the callback function
+setTimeout(function() {
+    console.log("timer")
+}, 5000);
+function x(y) {
+    console.log("x");
+    y();
 }
-// d(function() {
-//     console.log("Hello from Hirva");
-// })
-console.log(d());
+x(function y() {
+    console.log("y");
+})
