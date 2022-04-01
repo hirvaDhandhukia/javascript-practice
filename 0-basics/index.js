@@ -160,34 +160,91 @@
 // x();
 
 
-// practice
-function outest() {
-    var c=20;
-    function outer(b) {
-        function inner() {
-            console.log(a, b, c);
-        }
-        let a = 10;
-        return inner;
-    }
-    return outer;
+// // practice
+// function outest() {
+//     var c=20;
+//     function outer(b) {
+//         function inner() {
+//             console.log(a, b, c);
+//         }
+//         let a = 10;
+//         return inner;
+//     }
+//     return outer;
+// }
+
+// // outer()();
+// var close = outest()("hirva");
+// close();
+
+// // data privacy using closures
+// function counter() {
+//     var count = 0;
+//     return function incrementCounter() {
+//         count++;
+//         console.log(count);
+//     }
+// }
+// var counter1 = counter();
+// counter1()
+// counter1()
+
+// var counter2 = counter();
+// counter2();
+
+
+
+// // creating constructor function
+// function Counter() {
+//     var count = 0;
+//     this.incrementCounter = function() {
+//         count++;
+//         console.log(count);
+//     }
+//     this.decrementCounter = function() {
+//         count--;
+//         console.log(count);
+//     }
+// }
+
+// var counter1 = new Counter();
+
+// counter1.incrementCounter();
+// counter1.incrementCounter();
+// counter1.decrementCounter();
+
+
+// // function statement or function declaration
+// function a() {
+//     console.log("a called");
+// }
+// a();
+
+// // function expression
+// var b = function() {
+//     console.log("b called");
+// }
+// b();
+
+// // anonymous funcitons
+// // function () {
+// // }
+
+// // named function expression
+// var c = function x() {
+//     console.log("c called");
+// }
+// c();
+// // x(); // this is incorrect
+
+
+// first class functions 
+// we can pass functions inside another functions as an arguments
+// functions are treated as values in JS
+const d = function(param1) {
+    return function xyz() {}
 }
-
-// outer()();
-var close = outest()("hirva");
-close();
-
-// data privacy using closures
-function counter() {
-    var count = 0;
-    return function incrementCounter() {
-        count++;
-        console.log(count);
-    }
-}
-var counter1 = counter();
-counter1()
-counter1()
-
-var counter2 = counter();
-counter2();
+// d(function() {
+//     console.log("Hello from Hirva");
+// })
+console.log(d());
