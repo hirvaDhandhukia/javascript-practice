@@ -8,7 +8,7 @@ File Name  | Project info  | Live Project
 04-tic-tac-toe  | Take turns of players, show who wins with all turns on single line.  |  [↗](https://tic-tac-toe-hirva.netlify.app/)
 
 
-#### `Javascript basics`
+### Deep Dive into JavaScript
 - Execution Context
 - Call Stack
 - Hoisting
@@ -19,4 +19,11 @@ File Name  | Project info  | Live Project
 - Closures
 - Shadowing
 - Function Currying 
-- Event Loop
+- Function Callback
+- Javascript Runtime Environment
+    - JS Engine
+    - WebAPIs Environment
+    - Callback and Microtask Queue
+    - Event Loop
+- Garbage collector
+- Starvation of callback queue
