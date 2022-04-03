@@ -9,14 +9,14 @@ File Name  | Project info  | Live Project
 
 
 #### `Javascript basics`
-Execution Context
-Call Stack
-Hoisting
-Lexical Scope
-Scope Chain
-Temporal Dead Zone
-Block Scope
-Closures
-Shadowing
-Function Currying 
-Event Loop
+- Execution Context
+- Call Stack
+- Hoisting
+- Lexical Scope
+- Scope Chain
+- Temporal Dead Zone
+- Block Scope
+- Closures
+- Shadowing
+- Function Currying 
+- Event Loop
