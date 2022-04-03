@@ -6,3 +6,17 @@ File Name  | Project info  | Live Project
 02-counter  | Counter increases, decreases and resets when clicked the btn  |  [↗](https://counter-hirva.netlify.app/)
 03-input  | Hides error if input <= 10  |  [↗](https://input-hirva.netlify.app/)
 04-tic-tac-toe  | Take turns of players, show who wins with all turns on single line.  |  [↗](https://tic-tac-toe-hirva.netlify.app/)
+
+
+#### `Javascript basics`
+Execution Context
+Call Stack
+Hoisting
+Lexical Scope
+Scope Chain
+Temporal Dead Zone
+Block Scope
+Closures
+Shadowing
+Function Currying 
+Event Loop

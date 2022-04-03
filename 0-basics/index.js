@@ -252,13 +252,13 @@
 
 // Callback Function in JS
 // this 'y()' here is the callback function
-setTimeout(function() {
-    console.log("timer")
-}, 5000);
-function x(y) {
-    console.log("x");
-    y();
-}
-x(function y() {
-    console.log("y");
-})
+// setTimeout(function() {
+//     console.log("timer")
+// }, 5000);
+// function x(y) {
+//     console.log("x");
+//     y();
+// }
+// x(function y() {
+//     console.log("y");
+// })
