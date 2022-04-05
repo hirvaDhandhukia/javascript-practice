@@ -26,26 +26,37 @@ const calculate = function (radius, logic) {
     }
     return output;
 }
-console.log(calculate(radius, area));
-console.log(calculate(radius, circumference));
+// console.log(calculate(radius, area));
+// console.log(calculate(radius, circumference));
 
 
+// polyfil for map function 
+// console.log(radius.map(area));
 
-// ineffective because of code-repeatation
-const calculateArea = function (radius) {
+Array.prototype.calculate2 = function (logic) {
     const output = [];
-    for(let i=0; i<radius.length; i++) {
-        output.push (Math.PI * radius[i] * radius[i]);
+    for(let i=0; i< this.length; i++) {
+        output.push(logic(this[i]));
     }
     return output;
 }
-console.log(calculateArea(radius));
+console.log(radius.calculate2(area));
 
-const calculateCircumference = function (radius) {
-    const output = [];
-    for(let i=0; i<radius.length; i++) {
-        output.push (2 * Math.PI * radius[i]);
-    }
-    return output;
-}
-console.log(calculateCircumference(radius));
+// // ineffective because of code-repeatation
+// const calculateArea = function (radius) {
+//     const output = [];
+//     for(let i=0; i<radius.length; i++) {
+//         output.push (Math.PI * radius[i] * radius[i]);
+//     }
+//     return output;
+// }
+// console.log(calculateArea(radius));
+
+// const calculateCircumference = function (radius) {
+//     const output = [];
+//     for(let i=0; i<radius.length; i++) {
+//         output.push (2 * Math.PI * radius[i]);
+//     }
+//     return output;
+// }
+// console.log(calculateCircumference(radius));
