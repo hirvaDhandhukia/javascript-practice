@@ -17,18 +17,45 @@
 //     return x.toString(2);
 // }));
 
-// filter
-const arr = [5, 1, 3, 2, 6];
+// // filter
+// const arr = [5, 1, 3, 2, 6];
 
-// filter all odd values inside this array
-function isOdd(x) {
-    return x%2;
+// // filter all odd values inside this array
+// function isOdd(x) {
+//     return x%2;
+// }
+// function isEven(x) {
+//     return x%2 === 0;
+// }
+// function greaterThan4(x) {
+//     return x>4;
+// }
+// const output = arr.filter(isOdd);
+// console.log(output);
+
+// reduce function
+const arr = [5, 1, 3, 2, 6];
+function findSum(arr) {
+    let sum = 0;
+    for(let i=0; i<arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
 }
-function isEven(x) {
-    return x%2 === 0;
-}
-function greaterThan4(x) {
-    return x>4;
-}
-const output = arr.filter(isOdd);
-console.log(output);
+console.log(findSum(arr))
+
+// the accumulator should be initialized with an initial value
+// that is basically the second argument to the reduce function 
+const output = arr.reduce(function(acc, curr) {
+    acc = acc + curr;
+    return acc;
+}, 0);
+console.log(output)
+
+const maxEle = arr.reduce(function(max, curr) {
+    if(curr > max) {
+        max = curr;
+    }
+    return max;
+}, 0);
+console.log(maxEle);
